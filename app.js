@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <h1 id="greeting">Hello there!</h1>
+  <h1 id="greeting">Hello kamran!</h1>
 
   <script>
     function randomHexColor() {
