@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Color Hello</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 20vh;
+      transition: background-color 0.5s ease;
+    }
+    h1 {
+      color: #333;
+      font-size: 3em;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="greeting">Hello there!</h1>
+
+  <script>
+    function randomHexColor() {
+      return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    }
+    document.body.style.backgroundColor = randomHexColor();
+  </script>
+</body>
+</html>
